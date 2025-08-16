@@ -33,14 +33,9 @@ header {
    }
 nav {
        display: flex;
-       justify-content: space-between;
+       justify-content: center;
        align-items: center;
-   }
-.logo {
-       font-size: 1.5rem;
-       font-weight: 700;
-       color: #1e40af;
-       letter-spacing: -0.025em;
+       position: relative;
    }
 .nav-links {
        display: flex;
@@ -56,9 +51,6 @@ nav {
    }
 .nav-links a:hover {
        color: #1e40af;
-   }
-main {
-       margin-top: 70px;
    }
 .section {
        padding: 4rem 0;
@@ -207,8 +199,8 @@ main {
    }
 .cert-grid, .project-grid, .blog-grid {
        display: grid;
-       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-       gap: 2rem;
+       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+       gap: 1.5rem;
    }
 .cert-card, .project-card, .blog-card {
        background: white;
@@ -367,5 +359,51 @@ footer p {
 .animate-in {
        animation: slideUp 0.6s ease-out forwards;
    }
+/* Hamburger button */
+.hamburger {
+    display: none; /* hidden on desktop */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
 
-   
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #1e293b;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* hide links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* adjust based on header height */
+        left: 0;
+        width: 100%;
+        background: white;
+        border-top: 1px solid #e2e8f0;
+        padding: 1rem 0;
+        gap: 1rem;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex; /* show links when active */
+    }
+
+    .hamburger {
+        display: flex; /* show hamburger on mobile */
+    }
+
+        .cert-grid,
+    .blog-grid,
+    .project-grid {
+        grid-template-columns: 1fr; /* stack cards vertically */
+        padding: 0 1rem; /* optional padding on sides */
+    }
+}

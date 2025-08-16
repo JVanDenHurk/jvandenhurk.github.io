@@ -1,3 +1,7 @@
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -27,4 +31,8 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions)
 document.querySelectorAll('.cert-card, .project-card, .blog-card').forEach(card => {
     observer.observe(card);
+});
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 });
