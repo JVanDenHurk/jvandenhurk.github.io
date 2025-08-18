@@ -381,7 +381,7 @@ footer p {
         display: none; /* hide links by default */
         flex-direction: column;
         position: absolute;
-        top: 60px; /* adjust based on header height */
+        top: 36px; /* adjust based on header height */
         left: 0;
         width: 100%;
         background: white;
