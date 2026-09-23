@@ -618,8 +618,12 @@ body > footer p {
     animation: slideUp 0.6s ease-out forwards;
 }
 
-/* Tablet and mobile */
+
+/* Tablet and Mobile */
+
 @media (max-width: 768px) {
+
+    /* Navigation */
     header {
         padding-block: 0.8rem;
     }
@@ -662,6 +666,7 @@ body > footer p {
         margin-left: auto;
     }
 
+    /* Hero */
     .hero {
         padding: 7rem 1rem 4.5rem;
     }
@@ -678,6 +683,7 @@ body > footer p {
         font-size: 0.95rem;
     }
 
+    /* General layout */
     .section {
         padding-block: 3rem;
     }
@@ -691,6 +697,7 @@ body > footer p {
         font-size: 1.875rem;
     }
 
+    /* Profile */
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -702,15 +709,17 @@ body > footer p {
         text-align: left;
     }
 
+    /* Single-column cards */
     .skills-grid,
     .cert-grid,
     .blog-grid,
     .project-grid,
     .award-grid,
     .contact-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     }
 
+    /* Awards */
     .award-card {
         padding: 1.5rem;
     }
@@ -718,18 +727,56 @@ body > footer p {
     .award-header {
         align-items: flex-start;
     }
+
+    .award-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .award-description {
+        font-size: 0.95rem;
+        line-height: 1.65;
+    }
+
+    .award-quote p {
+        font-size: 0.9rem;
+        line-height: 1.65;
+    }
+
+    .award-footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .award-footer span {
+        font-size: 0.75rem;
+    }
 }
 
-/* Small phones */
+
+/* Small Phones */
+
 @media (max-width: 480px) {
+
+    /* General layout */
     .container {
         padding-inline: 15px;
     }
 
     .section-content {
-        padding-inline: 0.5rem;
+        padding-inline: 0;
     }
 
+    .section {
+        padding-block: 2.5rem;
+    }
+
+    .section h2 {
+        margin-bottom: 1.5rem;
+        font-size: 1.65rem;
+    }
+
+    /* Hero */
     .hero h1 {
         font-size: 1.9rem;
     }
@@ -738,28 +785,104 @@ body > footer p {
         font-size: 0.9rem;
     }
 
-    .cert-card,
-    .blog-card,
-    .project-card {
-        padding: 1.5rem;
-    }
-
+    /* Profile */
     .profile-img {
         width: 150px;
         height: 150px;
     }
-}
 
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
+    /* Standard cards */
+    .cert-card,
+    .blog-card,
+    .project-card {
+        padding: 1.25rem;
     }
 
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
+    /* Award card */
+    .award-card {
+        padding: 1.25rem;
+        border-radius: 10px;
+    }
+
+    /* Award header */
+    .award-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        margin-bottom: 0.875rem;
+    }
+
+    .award-icon {
+        flex: 0 0 40px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .award-type {
+        margin-bottom: 0.25rem;
+        font-size: 0.65rem;
+        line-height: 1.4;
+        letter-spacing: 0.04em;
+    }
+
+    .award-card h3 {
+        font-size: 1.1rem;
+        line-height: 1.35;
+    }
+
+    /* Award metadata */
+    .award-meta {
+        margin-bottom: 1rem;
+        padding-bottom: 0.875rem;
+        font-size: 0.8rem;
+    }
+
+    /* Award descriptions */
+    .award-description {
+        margin-bottom: 1rem;
+        color: var(--text);
+        font-size: 0.875rem;
+        line-height: 1.65;
+    }
+
+    /* Testimonial */
+    .award-quote {
+        margin-bottom: 1.25rem;
+        padding: 0.875rem 1rem;
+    }
+
+    .award-quote p {
+        margin-bottom: 0.875rem;
+        font-size: 0.825rem;
+        line-height: 1.65;
+    }
+
+    .award-quote cite {
+        font-size: 0.8rem;
+    }
+
+    /* Recognition badges */
+    .award-footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 0.4rem;
+        margin-top: auto;
+    }
+
+    .award-footer span {
+        display: inline-flex;
+        align-items: center;
+        max-width: 100%;
+        padding: 0.25rem 0.6rem;
+        font-size: 0.7rem;
+        line-height: 1.4;
+        white-space: normal;
+    }
+
+    /* Contact */
+    .contact-item {
+        padding: 1.25rem;
     }
 }
