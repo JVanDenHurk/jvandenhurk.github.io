@@ -8,66 +8,106 @@
 
     <meta
         name="description"
-        content="Portfolio of Justin Van Den Hurk – Service Desk Analyst focused on Microsoft 365, infrastructure, networking, and homelab projects."
+        content="Portfolio of Justin Van Den Hurk – Service Desk Analyst and aspiring Cloud Engineer focused on Microsoft Azure, Microsoft 365, identity management, cloud infrastructure, and automation."
     >
 
-    <title>Justin Van Den Hurk | IT Support Portfolio</title>
+    <meta name="theme-color" content="#0f172a">
 
+    <title>Justin Van Den Hurk | Cloud & Infrastructure Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
+    <!-- ==================================================
+         HEADER & NAVIGATION
+    ================================================== -->
+
     <header>
         <nav class="container" aria-label="Main Navigation">
 
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#certs">Certifications</a></li>
                 <li><a href="#awards">Awards</a></li>
                 <li><a href="#blogs">Blog</a></li>
                 <li><a href="#writeups">Writeups</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <div class="hamburger">
+            <button
+                class="hamburger"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-controls="nav-links"
+                aria-expanded="false"
+            >
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
 
         </nav>
     </header>
 
+
     <main>
 
-        <!-- HERO -->
+        <!-- ==================================================
+             HERO
+        ================================================== -->
+
         <section class="hero">
             <div class="container">
 
                 <h1>Justin Van Den Hurk</h1>
 
-                <p class="subtitle">Service Desk Analyst</p>
-
-                <p class="description">
-                    Working within a managed service provider environment,
-                    supporting users across Microsoft 365 and enterprise systems.
-                    Passionate about infrastructure, networking, and homelab
-                    projects while working toward a career in systems and
-                    network engineering.
+                <p class="subtitle">
+                    Service Desk Analyst | Aspiring Cloud Engineer
                 </p>
 
-                <a href="#contact" class="cta-button">
-                    Get in Touch
-                </a>
+                <p class="description">
+                    IT professional with experience in enterprise support,
+                    Microsoft 365, and identity management. Building practical
+                    expertise in Microsoft Azure, cloud infrastructure, and
+                    automation through professional experience and hands-on
+                    technical projects.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#projects" class="cta-button">
+                        View Projects
+                        <i data-lucide="arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#contact" class="cta-button">
+                        Get in Touch
+                        <i data-lucide="mail" aria-hidden="true"></i>
+                    </a>
+
+                </div>
 
             </div>
         </section>
 
 
-        <!-- ABOUT -->
+        <!-- ==================================================
+             ABOUT
+        ================================================== -->
+
         <section id="about" class="section">
             <div class="container">
                 <div class="section-content">
@@ -76,43 +116,54 @@
 
                     <div class="about-content">
 
+                        <!-- Profile Information -->
                         <div class="profile-section">
 
                             <img
                                 class="profile-img"
                                 src="j.jpg"
                                 alt="Portrait of Justin Van Den Hurk"
+                                width="180"
+                                height="180"
                             >
 
                             <div class="profile-details">
+
                                 <h3>Justin Van Den Hurk</h3>
+
                                 <p>Service Desk Analyst</p>
-                                <p>Location: Australia</p>
+                                <p>Australia</p>
+
                             </div>
 
                         </div>
 
+
+                        <!-- About Me -->
                         <div class="about-text">
 
                             <p>
                                 Currently working within a managed service
                                 provider environment, supporting users across
                                 Microsoft 365 and enterprise systems.
-                                Day-to-day work includes troubleshooting,
-                                account administration, ticket triage, and
-                                supporting technologies such as Active
-                                Directory, Azure, ServiceNow, and Microsoft 365.
+                                Day-to-day work includes technical troubleshooting,
+                                identity and access management, account
+                                administration, and ticket management, working
+                                with technologies such as Active Directory,
+                                Microsoft Entra ID, Azure, ServiceNow,
+                                and Microsoft 365.
                             </p>
 
                             <p>
-                                Outside of work, I spend a lot of time building
-                                homelab projects and expanding my knowledge in
-                                infrastructure, networking, and system
-                                administration. I use Proxmox to experiment
-                                with Windows Server, virtualisation, Active
-                                Directory, and networking while continuing
-                                to work toward Microsoft certifications and
-                                long-term goals in systems and network engineering.
+                                Outside of work, I am passionate about cloud
+                                technologies, infrastructure, and automation.
+                                I actively develop my technical skills through
+                                hands-on homelab projects using Proxmox,
+                                Windows Server, virtualisation, and networking.
+                                I am particularly interested in Microsoft Azure,
+                                cloud infrastructure, and identity management,
+                                while pursuing Microsoft certifications and
+                                working towards a career in cloud engineering.
                             </p>
 
                         </div>
@@ -120,73 +171,130 @@
                     </div>
 
 
-                    <!-- TECHNICAL SKILLS -->
+                    <!-- ==================================================
+                         TECHNICAL SKILLS
+                    ================================================== -->
+
                     <div class="skills-section">
 
-                        <h3>Technical Expertise</h3>
+                        <h3>Technical Skills</h3>
+
+                        <p class="skills-intro">
+                            Technologies and platforms I work with across
+                            cloud, infrastructure, and enterprise IT.
+                        </p>
 
                         <div class="skills-grid">
 
+                            <!-- Cloud & Identity -->
                             <div class="skill-category">
 
-                                <h4>Operating Systems & Platforms</h4>
-
-                                <ul>
-                                    <li>Windows 10/11 Administration</li>
-                                    <li>Windows Server basic configuration</li>
-                                    <li>Linux Ubuntu CLI usage</li>
-                                    <li>Proxmox Virtualisation</li>
-                                </ul>
-
-                            </div>
-
-                            <div class="skill-category">
+                                <div class="skill-icon">
+                                    <i
+                                        data-lucide="cloud"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
 
                                 <h4>Cloud & Identity</h4>
 
+                                <p class="skill-description">
+                                    Cloud platforms and identity management
+                                </p>
+
                                 <ul>
-                                    <li>Microsoft Azure foundational exposure</li>
-                                    <li>Active Directory user and group management</li>
-                                    <li>Microsoft 365 Administration</li>
+                                    <li>Microsoft Azure Fundamentals</li>
                                     <li>Microsoft Entra ID</li>
+                                    <li>Microsoft 365 Administration</li>
+                                    <li>Active Directory Administration</li>
+                                    <li>Identity & Access Management</li>
                                 </ul>
 
                             </div>
 
+
+                            <!-- Infrastructure & Virtualisation -->
                             <div class="skill-category">
 
-                                <h4>Enterprise Support Tools</h4>
+                                <div class="skill-icon">
+                                    <i
+                                        data-lucide="server"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+
+                                <h4>Infrastructure & Virtualisation</h4>
+
+                                <p class="skill-description">
+                                    Systems, virtual machines, and containers
+                                </p>
 
                                 <ul>
-                                    <li>ServiceNow incident and request management</li>
-                                    <li>CXone contact centre platform</li>
+                                    <li>Windows Server Configuration</li>
+                                    <li>Windows 10/11 Administration</li>
+                                    <li>Linux (Ubuntu)</li>
+                                    <li>Proxmox Virtualisation</li>
+                                    <li>Docker Containerisation</li>
                                 </ul>
 
                             </div>
 
+
+                            <!-- Networking & Security -->
                             <div class="skill-category">
+
+                                <div class="skill-icon">
+                                    <i
+                                        data-lucide="network"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
 
                                 <h4>Networking & Security</h4>
 
+                                <p class="skill-description">
+                                    Connectivity and security fundamentals
+                                </p>
+
                                 <ul>
-                                    <li>
-                                        Basic network troubleshooting including
-                                        DNS, DHCP, and TCP/IP
-                                    </li>
+                                    <li>DNS, DHCP & TCP/IP</li>
+                                    <li>Network Troubleshooting</li>
+                                    <li>Firewall & VLAN Concepts</li>
+                                    <li>Reverse Proxy Configuration</li>
+                                    <li>Security Fundamentals</li>
+                                </ul>
 
-                                    <li>
-                                        Security fundamentals through TryHackMe
-                                    </li>
+                            </div>
 
-                                    <li>
-                                        Firewall and VLAN concepts through
-                                        homelab practice
-                                    </li>
+
+                            <!-- Enterprise IT Operations -->
+                            <div class="skill-category">
+
+                                <div class="skill-icon">
+                                    <i
+                                        data-lucide="monitor-cog"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+
+                                <h4>Enterprise IT Operations</h4>
+
+                                <p class="skill-description">
+                                    Enterprise support and service management
+                                </p>
+
+                                <ul>
+                                    <li>ServiceNow</li>
+                                    <li>Incident & Request Management</li>
+                                    <li>Technical Troubleshooting</li>
+                                    <li>Knowledge Management</li>
+                                    <li>Technical Documentation</li>
                                 </ul>
 
                             </div>
 
                         </div>
+
                     </div>
 
                 </div>
@@ -194,7 +302,87 @@
         </section>
 
 
-        <!-- CERTIFICATIONS -->
+        <!-- ==================================================
+             PROJECTS
+        ================================================== -->
+
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-content">
+
+                    <h2>Projects & Homelab</h2>
+
+                    <div class="project-grid">
+
+                        <!-- Infrastructure Homelab -->
+                        <div class="project-card">
+
+                            <h3>Infrastructure Homelab</h3>
+
+                            <p>
+                                Configured a Dell OptiPlex as a Proxmox
+                                hypervisor hosting multiple virtual machines
+                                for hands-on infrastructure learning.
+                                The environment includes Windows Server,
+                                Active Directory, Ubuntu Server, network
+                                monitoring, and ongoing infrastructure
+                                projects that support my development
+                                towards cloud engineering.
+                            </p>
+
+                            <div class="tech-stack">
+                                <span class="tech-tag">Proxmox</span>
+                                <span class="tech-tag">Windows Server</span>
+                                <span class="tech-tag">Active Directory</span>
+                                <span class="tech-tag">Ubuntu Server</span>
+                                <span class="tech-tag">Networking</span>
+                            </div>
+
+                        </div>
+
+
+                        <!-- ClockIn -->
+                        <div class="project-card">
+
+                            <h3>ClockIn – Automated Sign In</h3>
+
+                            <p>
+                                Developed a Python-based automation tool
+                                that streamlines employee clock-in and
+                                clock-out processes for Deputy. The system
+                                uses Selenium for web interaction and
+                                supports scheduled tasks, reducing manual
+                                effort and improving accuracy.
+                            </p>
+
+                            <a
+                                href="https://github.com/JVanDenHurk/clockin"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View on GitHub
+                            </a>
+
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Selenium</span>
+                                <span class="tech-tag">Automation</span>
+                                <span class="tech-tag">Task Scheduling</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================================================
+             CERTIFICATIONS
+        ================================================== -->
+
         <section id="certs" class="section">
             <div class="container">
                 <div class="section-content">
@@ -203,7 +391,7 @@
 
                     <div class="cert-grid">
 
-                        <!-- CYBER SECURITY 101 -->
+                        <!-- Cyber Security 101 -->
                         <div class="cert-card">
 
                             <h3>TryHackMe – Cyber Security 101</h3>
@@ -230,7 +418,7 @@
                         </div>
 
 
-                        <!-- GOOGLE IT SUPPORT -->
+                        <!-- Google IT Support -->
                         <div class="cert-card">
 
                             <h3>Google IT Support Professional Certificate</h3>
@@ -257,7 +445,7 @@
                         </div>
 
 
-                        <!-- PRE SECURITY -->
+                        <!-- Pre Security -->
                         <div class="cert-card">
 
                             <h3>TryHackMe – Pre Security</h3>
@@ -289,7 +477,10 @@
         </section>
 
 
-        <!-- AWARDS & RECOGNITION -->
+        <!-- ==================================================
+             AWARDS & RECOGNITION
+        ================================================== -->
+
         <section id="awards" class="section">
             <div class="container">
                 <div class="section-content">
@@ -298,23 +489,23 @@
 
                     <div class="award-grid">
 
-                        <!-- SERVICE DESK EXCELLENCE -->
+                        <!-- Learning & Development Initiative -->
                         <div class="award-card">
 
                             <div class="award-header">
 
                                 <div class="award-icon" aria-hidden="true">
-                                    ★
+                                    <i data-lucide="graduation-cap"></i>
                                 </div>
 
                                 <div>
+
                                     <span class="award-type">
                                         NRI Team Recognition
                                     </span>
 
-                                    <h3>
-                                        Service Desk Excellence & Team Contribution
-                                    </h3>
+                                    <h3>Learning & Development Initiative</h3>
+
                                 </div>
 
                             </div>
@@ -323,6 +514,84 @@
                                 NRI Australia · 2026
                             </p>
 
+                            <p class="award-description">
+                                Recognised for taking the initiative to
+                                develop a structured LinkedIn Learning
+                                training package designed to support the
+                                professional development of Service Desk
+                                Analysts.
+                            </p>
+
+                            <p class="award-description">
+                                Developed learning modules incorporating
+                                curated training resources, practical
+                                troubleshooting exercises, and AI-powered
+                                role-play scenarios to help analysts build
+                                technical knowledge, communication skills,
+                                and confidence in real-world support
+                                situations.
+                            </p>
+
+                            <blockquote class="award-quote">
+
+                                <p>
+                                    "A big thank you for taking the initiative
+                                    to develop the LinkedIn Learning modules
+                                    for the Service Desk. Your willingness
+                                    to share knowledge and create something
+                                    that supports the development of others
+                                    is a fantastic contribution to the team!"
+                                </p>
+
+                                <cite>
+                                    –
+                                    <a
+                                        href="https://www.linkedin.com/in/jane-l-0a12595/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Jane Langston
+                                    </a>
+                                </cite>
+
+                            </blockquote>
+
+                            <div class="award-footer">
+                                <span>Learning & Development</span>
+                                <span>Training Development</span>
+                                <span>Knowledge Sharing</span>
+                                <span>AI-Assisted Learning</span>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Service Desk Excellence -->
+                        <div class="award-card">
+
+                            <div class="award-header">
+
+                                <div class="award-icon" aria-hidden="true">
+                                    <i data-lucide="star"></i>
+                                </div>
+
+                                <div>
+
+                                    <span class="award-type">
+                                        NRI Team Recognition
+                                    </span>
+
+                                    <h3>
+                                        Service Desk Excellence & Team Contribution
+                                    </h3>
+
+                                </div>
+
+                            </div>
+
+                            <p class="award-meta">
+                                NRI Australia · 2026
+                            </p>
 
                             <p class="award-description">
                                 Recognised for making a positive impact
@@ -355,7 +624,7 @@
                                 </p>
 
                                 <cite>
-                                    - 
+                                    –
                                     <a
                                         href="https://www.linkedin.com/in/darren-bansemer/"
                                         target="_blank"
@@ -377,21 +646,23 @@
                         </div>
 
 
-                        <!-- CUSTOMER CHAMPION -->
+                        <!-- Customer Champion -->
                         <div class="award-card">
 
                             <div class="award-header">
 
                                 <div class="award-icon" aria-hidden="true">
-                                    ★
+                                    <i data-lucide="trophy"></i>
                                 </div>
 
                                 <div>
+
                                     <span class="award-type">
                                         NRI Recognition
                                     </span>
 
                                     <h3>Customer Champion</h3>
+
                                 </div>
 
                             </div>
@@ -417,21 +688,23 @@
                         </div>
 
 
-                        <!-- DELIVERY EXCELLENCE -->
+                        <!-- Delivery Excellence -->
                         <div class="award-card">
 
                             <div class="award-header">
 
                                 <div class="award-icon" aria-hidden="true">
-                                    ★
+                                    <i data-lucide="award"></i>
                                 </div>
 
                                 <div>
+
                                     <span class="award-type">
                                         NRI Reward & Recognition
                                     </span>
 
                                     <h3>Delivery Excellence</h3>
+
                                 </div>
 
                             </div>
@@ -461,20 +734,23 @@
         </section>
 
 
-        <!-- BLOG -->
+        <!-- ==================================================
+             TECHNICAL BLOG
+        ================================================== -->
+
         <section id="blogs" class="section">
             <div class="container">
                 <div class="section-content">
 
                     <h2>
                         <a href="https://blog.justinvandenhurk.au/">
-                            Blog
+                            Technical Blog
                         </a>
                     </h2>
 
                     <div class="blog-grid">
 
-                        <!-- MS-102 LAB -->
+                        <!-- MS-102 Lab -->
                         <div class="blog-card">
 
                             <h3>
@@ -483,8 +759,8 @@
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    MS-102 Lab 6 - Self-Service Password Reset
-                                    and Identity Protection
+                                    MS-102 Lab 6 – Self-Service Password
+                                    Reset and Identity Protection
                                 </a>
                             </h3>
 
@@ -508,7 +784,7 @@
                         </div>
 
 
-                        <!-- CCNA LAB -->
+                        <!-- CCNA Lab -->
                         <div class="blog-card">
 
                             <h3>
@@ -517,7 +793,7 @@
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    Lab 1 - My First Real Network
+                                    Lab 1 – My First Real Network
                                 </a>
                             </h3>
 
@@ -540,7 +816,7 @@
                         </div>
 
 
-                        <!-- PROXMOX SERIES -->
+                        <!-- Proxmox Series -->
                         <div class="blog-card">
 
                             <h3>
@@ -549,7 +825,8 @@
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    Proxmox Series – Part 1: Hunting for a Server
+                                    Proxmox Series – Part 1:
+                                    Hunting for a Server
                                 </a>
                             </h3>
 
@@ -572,7 +849,7 @@
                         </div>
 
 
-                        <!-- NORTHSTAR PROJECT -->
+                        <!-- NorthStar Project -->
                         <div class="blog-card">
 
                             <h3>
@@ -613,20 +890,23 @@
         </section>
 
 
-        <!-- WRITEUPS -->
+        <!-- ==================================================
+             SECURITY WRITEUPS
+        ================================================== -->
+
         <section id="writeups" class="section">
             <div class="container">
                 <div class="section-content">
 
                     <h2>
                         <a href="https://writeups.justinvandenhurk.au/">
-                            Writeups
+                            Security Writeups
                         </a>
                     </h2>
 
                     <div class="blog-grid">
 
-                        <!-- EXPRESSWAY -->
+                        <!-- Expressway -->
                         <div class="blog-card">
 
                             <h3>
@@ -660,7 +940,7 @@
                         </div>
 
 
-                        <!-- CONVERSOR -->
+                        <!-- Conversor -->
                         <div class="blog-card">
 
                             <h3>
@@ -695,7 +975,7 @@
                         </div>
 
 
-                        <!-- BANDIT -->
+                        <!-- Bandit -->
                         <div class="blog-card">
 
                             <h3>
@@ -709,7 +989,7 @@
                             </h3>
 
                             <p class="blog-meta">
-                                Posted: April 23, 2025
+                                Published: April 23, 2025
                             </p>
 
                             <p>
@@ -728,7 +1008,7 @@
                         </div>
 
 
-                        <!-- LEVIATHAN -->
+                        <!-- Leviathan -->
                         <div class="blog-card">
 
                             <h3>
@@ -742,7 +1022,7 @@
                             </h3>
 
                             <p class="blog-meta">
-                                Posted: April 25, 2025
+                                Published: April 25, 2025
                             </p>
 
                             <p>
@@ -767,81 +1047,10 @@
         </section>
 
 
-        <!-- PROJECTS -->
-        <section id="projects" class="section">
-            <div class="container">
-                <div class="section-content">
+        <!-- ==================================================
+             CONTACT
+        ================================================== -->
 
-                    <h2>Key Projects</h2>
-
-                    <div class="project-grid">
-
-                        <!-- CLOCKIN -->
-                        <div class="project-card">
-
-                            <h3>ClockIn – Automated Sign In</h3>
-
-                            <p>
-                                Developed a Python-based automation tool
-                                that streamlines employee clock-in and
-                                clock-out processes for Deputy. The system
-                                uses Selenium for web interaction and
-                                supports scheduled tasks, reducing manual
-                                effort and improving accuracy.
-                            </p>
-
-                            <a
-                                href="https://github.com/JVanDenHurk/clockin"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View on GitHub
-                            </a>
-
-                            <div class="tech-stack">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Selenium</span>
-                                <span class="tech-tag">Automation</span>
-                                <span class="tech-tag">Task Scheduling</span>
-                            </div>
-
-                        </div>
-
-
-                        <!-- INFRASTRUCTURE HOMELAB -->
-                        <div class="project-card">
-
-                            <h3>Infrastructure Homelab</h3>
-
-                            <p>
-                                Configured a Dell OptiPlex as a Proxmox
-                                hypervisor hosting virtual machines for
-                                infrastructure learning and experimentation.
-                                Includes Windows Server with Active
-                                Directory, Ubuntu Server VMs, network
-                                monitoring, and ongoing projects aligned
-                                with systems administration and networking
-                                study.
-                            </p>
-
-                            <div class="tech-stack">
-                                <span class="tech-tag">Proxmox</span>
-                                <span class="tech-tag">Windows Server</span>
-                                <span class="tech-tag">Active Directory</span>
-                                <span class="tech-tag">Ubuntu Server</span>
-                                <span class="tech-tag">Networking</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- CONTACT -->
         <section id="contact" class="section">
             <div class="container">
                 <div class="section-content">
@@ -850,11 +1059,11 @@
 
                     <div class="contact-grid">
 
-                        <!-- EMAIL -->
+                        <!-- Email -->
                         <div class="contact-item">
 
                             <div class="contact-icon" aria-hidden="true">
-                                📧
+                                <i data-lucide="mail"></i>
                             </div>
 
                             <h3>Email</h3>
@@ -868,11 +1077,11 @@
                         </div>
 
 
-                        <!-- LINKEDIN -->
+                        <!-- LinkedIn -->
                         <div class="contact-item">
 
                             <div class="contact-icon" aria-hidden="true">
-                                💼
+                                <i data-lucide="linkedin"></i>
                             </div>
 
                             <h3>LinkedIn</h3>
@@ -883,7 +1092,29 @@
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    www.linkedin.com/in/justin-van-den-hurk
+                                    Connect on LinkedIn
+                                </a>
+                            </p>
+
+                        </div>
+
+
+                        <!-- GitHub -->
+                        <div class="contact-item">
+
+                            <div class="contact-icon" aria-hidden="true">
+                                <i data-lucide="github"></i>
+                            </div>
+
+                            <h3>GitHub</h3>
+
+                            <p>
+                                <a
+                                    href="https://github.com/JVanDenHurk"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    View GitHub Profile
                                 </a>
                             </p>
 
@@ -898,7 +1129,10 @@
     </main>
 
 
-    <!-- FOOTER -->
+    <!-- ==================================================
+         FOOTER
+    ================================================== -->
+
     <footer>
         <div class="container">
 
@@ -910,7 +1144,23 @@
         </div>
     </footer>
 
+
+    <!-- ==================================================
+         SCRIPTS
+    ================================================== -->
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+
+    <!-- Main JavaScript -->
     <script src="script.js"></script>
+
+    <!-- Initialise Lucide Icons -->
+    <script>
+        if (window.lucide) {
+            lucide.createIcons();
+        }
+    </script>
 
 </body>
 </html>
