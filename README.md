@@ -1,30 +1,74 @@
 # My Projects
-A showcase of some of the things I’ve built, tinkered with, and broken (before fixing again).  
 
-## 🛠️ What You'll Find Here
-- **Automation Tools** – Scripts and workflows that make repetitive tasks vanish.
-- **Web Apps** – Small but functional apps, often built to solve my own problems.
-- **Homelab Experiments** – Virtualization, networking, and infrastructure projects I run at home.
+A collection of personal projects, technical labs, and automation tools showcasing my ongoing development in cloud engineering, infrastructure, and enterprise IT.
 
-## 🧠 Why I’m Doing This
-I enjoy learning by building. Each project here started as a personal challenge or a “what if I could…” idea. By sharing them, I hope others can learn from my successes, my mistakes, and my endless trial-and-error sessions.  
+I currently work as a Service Desk Analyst within a managed service provider environment, with a particular interest in Microsoft Azure, identity management, infrastructure, and automation.
+
+## 🛠️ Areas of Interest
+
+- **Cloud & Identity** – Microsoft Azure, Microsoft Entra ID, cloud infrastructure, and identity management.
+- **Infrastructure & Virtualisation** – Proxmox, Windows Server, Linux, Docker, and self-hosted services.
+- **Automation** – Scripts, tools, and workflows designed to simplify repetitive tasks.
+- **Networking & Security** – Network services, connectivity, access management, and security fundamentals.
+- **Application Development** – Practical applications built to solve real-world problems.
 
 ## 🚀 Featured Projects
-- **[ClockIn – Automated Sign-In](https://github.com/JVanDenHurk/clockin)**  
-  Automates clocking in and out for work, saving me from rushing to the kiosk before my shift.  
-  *Tech stack:* Python, Selenium, Cron
 
-- **[Etherfields Secret Scripts – Board Game Companion App](https://etherfieldssecretscripts.netlify.app/) / [Source Code](https://github.com/JVanDenHurk/ess.web)**  
-  A spoiler-free helper for the Etherfields board game to manage secret scripts without ruining the surprise.  
-  *Tech stack:* HTML, CSS, JavaScript, Netlify
+### Infrastructure Homelab
 
-- **Homelab with the OptiPlex**  
-  Repurposed a budget-friendly Dell OptiPlex into a Proxmox-powered homelab for running multiple VMs, testing services, and experimenting with network setups.  
-  *Tech stack:* Proxmox, Ubuntu Server, Docker
+A Dell OptiPlex repurposed into a Proxmox-powered environment for hands-on infrastructure experimentation and technical development.
 
-## 📬 Contact
-If you’re working on similar projects or want to swap homelab tips, I’m always happy to connect.
+The environment includes:
+
+- Proxmox Virtualisation
+- Windows Server & Active Directory Domain Services
+- Ubuntu Server
+- Docker & Containerised Services
+- AdGuard Home & DNS Management
+- Nginx Proxy Manager
+- Network Configuration & Troubleshooting
+
+**Tech stack:** Proxmox, Windows Server, Active Directory, Ubuntu, Docker, Nginx
+
+### [ClockIn – Automated Sign-In](https://github.com/JVanDenHurk/clockin)
+
+A Python-based automation tool designed to streamline repetitive clock-in and clock-out processes through browser automation and scheduled tasks.
+
+**Tech stack:** Python, Selenium, Cron
+
+### [Etherfields Secret Scripts – Board Game Companion](https://etherfieldssecretscripts.netlify.app/)
+
+A spoiler-free web application designed to help Etherfields players manage and access secret scripts during gameplay.
+
+**Tech stack:** HTML, CSS, JavaScript, Netlify
+
+[View Source Code](https://github.com/JVanDenHurk/ess.web)
+
+## 📚 Currently Developing My Skills
+
+I am actively expanding my technical knowledge through hands-on labs, Microsoft training resources, certification preparation, and personal projects.
+
+My current areas of focus include:
+
+- Microsoft Azure Administration
+- Cloud Infrastructure & Networking
+- Identity & Access Management
+- Infrastructure Automation
+- Microsoft Certifications
+
+My long-term career goal is to transition into cloud engineering, building on my experience in enterprise IT support.
+
+## 🌐 Portfolio & Resources
+
+- **[Professional Portfolio](https://justinvandenhurk.au/)**
+- **[Technical Blog](https://blog.justinvandenhurk.au/)**
+- **[Cybersecurity Writeups](https://writeups.justinvandenhurk.au/)**
+- **[LinkedIn](https://www.linkedin.com/in/justin-van-den-hurk/)**
+
+## 📬 Connect
+
+I'm always interested in connecting with others who share an interest in cloud technologies, infrastructure, automation, and homelab projects.
 
 ---
 
-> Built with 💻, ☕, and plenty of trial and error by [jvandenhurk](https://github.com/jvandenhurk)
+Built with 💻, ☕, curiosity, and continuous learning.
